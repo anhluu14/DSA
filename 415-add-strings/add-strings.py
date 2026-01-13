@@ -13,8 +13,8 @@ class Solution:
 
         # Calculate the result
         for digit_index in range(len(num1) - 1, -1, -1):
-            digit_num1 = ord(num1[digit_index]) - ord('0') # "0" co gia tri la 48
-            digit_num2 = ord(num2[digit_index]) - ord('0')
+            digit_num1 = ord(num1[digit_index]) - 48 # "0" co gia tri la 48
+            digit_num2 = ord(num2[digit_index]) - 48
 
             digit = digit_num1 + digit_num2 + carry
             if digit < 10:
@@ -31,7 +31,7 @@ class Solution:
 
         #convert list to string
         for digit in digits:
-            num += chr(digit + ord('0')) # cong them 48 de tra ve dung ki tu
+            num += chr(digit + 48) # cong them 48 de tra ve dung ki tu
 
         # Answer 
         return num
