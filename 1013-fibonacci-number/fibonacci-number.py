@@ -20,4 +20,6 @@ class Solution:
         self.memo[n] = self.fib(n - 1) + self.fib(n - 2)
         return self.memo[n]
 
-    
+# Do phuc tap toi thieu cua code nay la O(n)
+# => fib(n) -> fib(n - 1):1, fib(n - 2): 2, fib(n - 3): 3, fib(n - 4): 5, fib(n - 5):8... fib(0)
+#  Do phuc tap toi da cung la O(n)
