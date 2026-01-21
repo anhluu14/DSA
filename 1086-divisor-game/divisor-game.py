@@ -1,6 +1,7 @@
 from functools import lru_cache
+
 class Solution:
-    @lru_cache(None)
+    @lru_cache(None) #sau khi tinh xong se luu lai ket qua o trang thai n luon
     def divisorGame(self, n: int) -> bool:
         
         # Base case
