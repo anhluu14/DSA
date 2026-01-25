@@ -7,7 +7,7 @@ class Solution:
         for x in s:
             #check if its the start of sequence
             if x - 1 not in s: #if it does not have a left neighbor then its the start of the sequence 
-                length = 1
+                length = 0
                 while x + length in s:
                     length += 1
                 longest = max(longest, length)
