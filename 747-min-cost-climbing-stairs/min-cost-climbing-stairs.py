@@ -5,6 +5,7 @@ class Solution:
         if i == 1:
             return 0
         return min(self.f(i - 1) + self.nums[i - 1], self.f(i - 2) + self.nums[i - 2])
+        
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         n = len(cost)
         self.cost = cost.copy()
