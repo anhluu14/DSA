@@ -13,7 +13,6 @@ class Solution:
     def rob(self, nums: List[int]) -> int:
         n = len(nums)
         self.nums = nums.copy()
-
         dp = [0] * (n + 1)
         dp[0] = 0
         dp[1] = nums[0]
