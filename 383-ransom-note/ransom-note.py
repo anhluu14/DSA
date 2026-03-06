@@ -2,7 +2,7 @@ class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         counter = {}
         for c in magazine:
-            if c in counter:
+            if c in counter: 
                 counter[c] += 1
             else:
                 counter[c] = 1
